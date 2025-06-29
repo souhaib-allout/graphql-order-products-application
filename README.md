@@ -7,9 +7,7 @@ The **Order Products Application** is a web-based system designed to facilitate 
 
 ## Features
 - **Product Management:** Add, update, and delete products.
-- **Order Creation:** Customers can create orders by selecting products and specifying quantities.
-- **Order Tracking:** Real-time status updates of orders (e.g., pending, shipped, delivered).
-- **User Authentication:** Secure login and registration for users.
+- **Order Creation:** Customers can create orders by selecting products.
 - **GraphQL API:** Efficient querying and mutation support for frontend-backend communication.
 - **Validation:** Robust input validation including password complexity and data constraints.
 
@@ -18,24 +16,8 @@ The **Order Products Application** is a web-based system designed to facilitate 
 ## Technologies Used
 - **Backend:** Spring Boot, Spring Data JPA, Hibernate
 - **API:** GraphQL for flexible and efficient data fetching
-- **Database:** MySQL / PostgreSQL (or your choice)
-- **Frontend:** (Optional) React / Angular / Vue.js
-- **Build Tools:** Maven / Gradle
-- **Security:** Spring Security with JWT or OAuth2 (optional)
+- **Database:** MySQL 
+- **Build Tools:** Maven 
 - **Validation:** Jakarta Bean Validation (Hibernate Validator)
 
 ---
-
-## Getting Started
-
-### Prerequisites
-- Java 17+
-- Maven or Gradle
-- Database server (MySQL, PostgreSQL, etc.)
-- (Optional) Node.js and npm/yarn for frontend
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/order-products-app.git
-   cd order-products-app
