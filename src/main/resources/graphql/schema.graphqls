@@ -1,0 +1,55 @@
+type Query{
+    getAllUsers:[User]
+    getAllProducts: [Product]
+    getProductsByTitle(input: String): [Product]
+    getAllOrders:[Order]
+}
+
+type Mutation{
+    createUser(input: CreateUserInput): User
+    createProduct(input: CreateProductInput): Product
+    createOrder(userId: ID, productsIds: [ID]): SuccessMessage
+}
+
+input CreateUserInput {
+    gender: gender!
+    name: String!
+    email: String!
+    password: String!
+}
+input CreateProductInput {
+    title: String!,
+    description: String!,
+    price: Float!
+}
+
+type User{
+    gender: gender
+    id: ID
+    name: String
+    email: String
+}
+
+type Product{
+    id: ID,
+    title: String,
+    description: String,
+    price: Float
+}
+
+type Order{
+    id: ID,
+    priceTotal: Float,
+    user: User,
+    products: [Product]
+}
+
+type SuccessMessage {
+    status: String!
+    message: String
+}
+
+enum gender{
+    male,
+    female
+}
